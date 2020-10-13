@@ -1,0 +1,65 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            --bg: #f5f6f7;
+            --color-text: #9c9c9c;
+            --color-orange: #ff6a00;
+            --color-shadow: -4px -2px 4px 0 #ffffff, 4px 2px 6px 0 #dfe4ea;
+            --color-inset-shadow: inset -2px -2px 6px rgba(255, 255, 255, .8), inset 2px 2px 6px rgba(0, 0, 0, .1);
+            --color-equal-shadow: -2px -2px 6px rgba(3, 169, 244, .1), 2px 2px 6px rgba(0, 0, 0, .1);
+            --color-equal-inset-shadow: inset -2px -2px 6px rgba(255, 106, 0.5), inset 2px 2px 6px rgba(0, 0, 0, .3);
+        }
+        
+        html[data-theme="dark"] {
+            --bg: #131419;
+            --color-text: #ffffff;
+            --color-orange: #ff6a00;
+            --color-shadow: -3px -3px 10px rgba(255, 255, 255, .01), 3px 3px 15px rgba(0, 0, 0, .5);
+            --color-inset-shadow: inset -2px -2px 6px rgba(255, 255, 255, .01), inset 2px 2px 6px rgba(0, 0, 0, .8);
+            --color-equal-shadow: -2px -2px 6px rgba(3, 169, 244, .01), 2px 2px 6px rgba(0, 0, 0, .8);
+            --color-inset-equal-shadow: inset -2px -2px 6px rgba(255, 106, 0, .2), inset 2px 2px 6px rgba(0, 0, 0, .5);
+        }
+        
+        body {
+            background: var(--bg);
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        button {
+            outline: none
+        }
+        
+        .main {
+            width: 300px;
+            height: 560px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            background: var(--bg);
+            box-shadow: var(--color-shadow);
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .heading {
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding: 0 28spx;
+        }
+        .heading span
+        {
+            color: var(--color-text);
+            font-size: 18px;
+        }
+        .heading span:nth-child(1),
+        .heading span:nth-child(3)
+        {}
